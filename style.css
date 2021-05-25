@@ -1,6 +1,10 @@
+html, body {
+  height: 100%
+}
 /* Root */
 :root {
-  --primary: #ffb400
+  --primary: #ffb400;
+  --grey: #808080;
 }
 /* Navbar */
 nav.bg-primary{
@@ -8,12 +12,12 @@ nav.bg-primary{
 }
 
 /* Button */
-button.btn-primary, label.btn-primary {
+button.btn-primary, label.btn-primary, a.btn-primary {
   color: #ffffff;
   background-color: var(--primary);
   border-color: var(--primary);
 }
-button.btn-outline-primary, label.btn-outline-primary {
+button.btn-outline-primary, label.btn-outline-primary, a.btn-outline-primary {
   color: var(--primary) ;
   border-color: var(--primary) ;
 }
@@ -31,4 +35,54 @@ button.btn-outline-primary, label.btn-outline-primary {
 
 footer a {
   color: var(--primary)
+}
+
+/* Forms */
+
+.form-signin {
+  width: 100%;
+  max-width: 576px;
+  margin: auto;
+}
+
+/* Banner */
+.big-banner {
+  min-height: 400px;
+  background-position: 50% 35%;
+  background-size: cover;
+}
+.small-banner {
+  min-height: 200px;
+  background-position: 50% 35%;
+  background-size: cover;
+}
+
+/* Links */
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  text-decoration: underline !important;
+}
+
+/* Cards */
+.card-text {
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-attendee {
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+}
+
+.comment-text {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Images */
+
+img.resource{
+  width: 100%;
 }
